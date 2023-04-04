@@ -1,0 +1,8 @@
+
+.primary-button {
+    box-shadow: #842FFB 5px 5px;
+}
+
+.primary-button:hover {
+    box-shadow: #842FFB 2px 2px;
+}
