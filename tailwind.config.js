@@ -8,6 +8,7 @@ export default {
         extend: {
             colors: {
                 'primary': '#842FFB',
+                'highlight': '#F43CB9',
                 'secondary': '#FFFFFF',
                 'navLink': '#868686',
                 'danger': '#ED1E61',
@@ -26,6 +27,7 @@ export default {
             fontFamily: {
                 'sans': ['Pilcrow Rounded', 'sans-serif'],
                 'serif': ['Pencerio Hairline', 'serif'],
+                'monospace': ['JetBrains Mono', 'monospace']
             }
         },
     },

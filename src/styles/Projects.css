@@ -1,0 +1,16 @@
+.projects__header {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.projects__sub {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.project__image {
+    box-shadow: 4px 4px #000;
+}

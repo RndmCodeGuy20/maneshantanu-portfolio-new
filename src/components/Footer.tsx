@@ -1,4 +1,4 @@
-import '../styles/AboutMe.css';
+// import '../styles/Footer.css';
 import githubIcon from "../assets/github.svg";
 import linkedinIcon from "../assets/linkedin.svg";
 import instagramIcon from "../assets/instagram.svg";

@@ -1,0 +1,125 @@
+.skills__header {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.skills__sub {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.skills__sub > span {
+    color: #832EF9;
+}
+
+.skills__lang {
+    height: 10rem;
+    width: 100%;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    /*background: #C7FA82;*/
+    background: white;
+    box-shadow: 4px 4px #000000;
+    transition: ease-in-out 300ms;
+}
+
+.skills__lang:hover {
+    background: #C8FB82;
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+    box-shadow: 8px 8px #000000;
+    border-radius: 15px;
+}
+
+.skills__lang__image {
+    height: 6rem;
+    width: 6rem;
+    background: url("../assets/cymphony.png");
+    background-size: contain;
+    border-radius: 10px;
+}
+
+.skills__lang__player__progress {
+    border: 3px solid #E4D7FF;
+    border-radius: 20px;
+    width: 100%;
+    background: #E4D7FF;
+}
+
+.skills__lang__player__progress__val {
+    border: 2px solid #832EF9;
+    border-radius: 20px;
+    width: 89%;
+}
+
+.heart {
+    color: #F43CB9;
+}
+
+.skills__tech {
+    /*height: 10rem;*/
+    width: 100%;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    /*background: #C7FA82;*/
+    background: white;
+    box-shadow: 4px 4px #000000;
+}
+
+.skills__tech:hover {
+    /*background: #C8FB82;*/
+    cursor: pointer;
+}
+
+
+.skills__tech__image {
+    height: 12rem;
+    width: 12rem;
+    background: url("../assets/hybrid.png");
+    background-size: contain;
+    border-radius: 10px;
+}
+
+.skills__tech__image:hover {
+    background: rgba(255, 255, 255, 0.5) url("../assets/hybrid.png");
+    background-size: contain;
+    opacity: 0.8;
+    transition: ease-in-out 300ms;
+}
+
+
+.skills__tech__image:hover .skills__stack__image__view {
+    transition: ease-in-out 100ms;
+    display: flex;
+}
+
+.skills__tech__header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.play__button {
+    color: rgb(134, 134, 134);
+}
+
+.play__button:hover {
+    color: #C8FB82;
+}
+
+.skills__tech__player__progress {
+    border: 3px solid #E4D7FF;
+    border-radius: 20px;
+    width: 100%;
+    background: #E4D7FF;
+}
+
+.skills__tech__player__progress__val {
+    border: 2px solid #832EF9;
+    border-radius: 40px;
+    width: 89%;
+}
+

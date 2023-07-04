@@ -22,7 +22,30 @@
 
 .special {
     color: #832EF9;
-    font-weight: 600;
+    /*font-weight: 600;*/
+    position: relative;
+}
+
+.special::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #832EF9;
+    bottom: -5px;
+    left: 0;
+
+    border-radius: 200px;
+
+    transform: ScaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.special:hover::after {
+    transform: ScaleX(1);
+    transition: transform 0.5s ease-in-out;
+    border-radius: 200px;
 }
 
 
@@ -65,6 +88,36 @@
     border: 2px solid #000000;
     border-radius: 10px;
     box-shadow: 5px 5px #000;
+}
+
+.social__container {
+    /*background: #f37dcf;*/
+    background: transparent;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    transition: 1s;
+    color: #F43CB9;
+}
+
+.social__container span {
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    text-align: center;
+}
+
+.social__container:hover {
+    width: 170px;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 2px 2px #000;
+    transition: ease-in-out 0.5s;
+}
+
+.social__container:hover span {
+    padding: 2px;
+    width: 200px;
 }
 
 
