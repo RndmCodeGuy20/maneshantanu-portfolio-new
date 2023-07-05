@@ -27,8 +27,8 @@ export default {
                 'primary-dark': '#2563EB',
             },
             fontFamily: {
-                'sans': ['Pilcrow Rounded', 'sans-serif'],
-                'serif': ['Pencerio Hairline', 'serif'],
+                'sans': ["Pilcrow Rounded", 'sans-serif'],
+                'serif': ["Pencerio Hairline", 'serif'],
                 'monospace': ['JetBrains Mono', 'monospace']
             }
         },
