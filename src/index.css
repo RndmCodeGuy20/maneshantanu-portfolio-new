@@ -6,14 +6,14 @@
     font-family: "Pilcrow Rounded";
     font-style: normal;
     font-weight: 200 900;
-    src: url("../../public/fonts/PilcrowRounded-Regular.otf") format("otf"),
+    src: local('Pilcrow Rounded'), url("@/assets/fonts/Pilcrow-Rounded.otf") format("otf"),
 }
 
 @font-face {
     font-family: "Pencerio Hairline";
     font-style: normal;
     font-weight: 200 900;
-    src: url("../../public/fonts/Pencerio-Hairline.otf") format("otf"),
+    src: local('Pencerio Hairline'), url("@/assets/fonts/Pencerio-Hairline.otf") format("otf"),
 }
 
 :root {
