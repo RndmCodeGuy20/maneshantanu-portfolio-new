@@ -6,7 +6,7 @@
     font-family: "Pilcrow Rounded";
     font-style: normal;
     font-weight: 200 900;
-    src: local('Pilcrow Rounded'), url("@/assets/fonts/PilcrowRounded-Regular.otf") format("otf"),
+    src: local('Pilcrow Rounded'), url("@/assets/fonts/Pilcrow-Rounded.woff2") format("woff2"),
 }
 
 @font-face {
