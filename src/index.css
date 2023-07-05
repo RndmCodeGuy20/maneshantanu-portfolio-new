@@ -6,17 +6,18 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Pilcrow Rounded" !important;
+    font-family: 'PilcrowRounded-Variable';
+    src: url('./assets/fonts/Pilcrow-Rounded.woff2') format('woff2'), local("Pilcrow Rounded");
+    font-weight: 400 900;
+    font-display: swap;
     font-style: normal;
-    font-weight: 200 900;
-    src: local("Pilcrow Rounded"), url("@/assets/fonts/Pilcrow-Rounded.woff2") format("woff2"),
 }
 
 @font-face {
     font-family: "Pencerio Hairline" !important;
     font-style: normal;
     font-weight: 200 900;
-    src: local("Pencerio Hairline"), url("@/assets/fonts/Pencerio-Hairline.otf") format("otf"),
+    src: url("./assets/fonts/Pencerio-Hairline.otf") format("opentype"), local("Pencerio Hairline");
 }
 
 :root {
