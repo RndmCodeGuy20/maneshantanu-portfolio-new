@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'PilcrowRounded-Variable';
+    font-family: "Pilcrow Rounded";
     src: url('./assets/fonts/Pilcrow-Rounded.woff2') format('woff2'), local("Pilcrow Rounded");
     font-weight: 400 900;
     font-display: swap;
