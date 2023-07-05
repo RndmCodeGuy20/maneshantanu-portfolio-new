@@ -8,8 +8,8 @@ function AboutMe() {
         <section className="max-w-screen-xl bg-white dark:bg-gray-900 mx-auto p-4 py-16">
             <div className="flex flex-col align-center">
                 <div className="aboutme text-center">
-                    <div className="aboutme__header">About Me</div>
-                    <div className="aboutme__sub">"I'm nobody, as like a <span>zero</span>"</div>
+                    <div className="aboutme__header font-sans">About Me</div>
+                    <div className="aboutme__sub font-sans">"I'm nobody, as like a <span>zero</span>"</div>
                 </div>
                 <div
                     className="aboutme__desc flex gap-10 flex-col lg:flex-row md:flex-col sm:flex-row align-center justify-items-center mx-auto py-8">
