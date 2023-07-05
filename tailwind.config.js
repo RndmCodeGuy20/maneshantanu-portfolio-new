@@ -1,4 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+
+/**
+ * @font-face {
+ *  font-family: 'Pilcrow Rounded';
+ *  font-style: normal;
+ *  font-weight: 400;
+ *  src: url('../fonts/PilcrowRounded-Regular.woff2') format('woff2'),
+ */
+
+
 export default {
     content: [
         "./index.html",
