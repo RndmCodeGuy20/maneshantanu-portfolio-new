@@ -5,11 +5,13 @@ function AboutMe() {
 
 
     return (
-        <section className="max-w-screen-xl bg-white dark:bg-gray-900 mx-auto p-4 py-16">
+        <section className="max-w-screen-xl bg-white dark:bg-gray-900 mx-auto p-4 py-16" id={"aboutme"}>
             <div className="flex flex-col align-center">
                 <div className="aboutme text-center">
                     <div className="aboutme__header">About Me</div>
-                    <div className="aboutme__sub">"I'm nobody, as like a <span>zero</span>"</div>
+                    <div className="aboutme__sub">&quot;I&apos;m nobody, as like a <span
+                        className={'special'}>zero</span>&quot;
+                    </div>
                 </div>
                 <div
                     className="aboutme__desc flex gap-10 flex-col lg:flex-row md:flex-col sm:flex-row align-center justify-items-center mx-auto py-8">
@@ -22,38 +24,20 @@ function AboutMe() {
                                 <span className={'text-[#61afef] drop-shadow'}>Developer();</span>
                             </h1>
                         </div>
-                        <p className={'about__description text-gray text-left text-sm font-monospace'}>
-                            <span className={'text-[#F58F29]'}>{'\u007B'}</span><br/>
-                            &emsp;<span className={'text-[#A30015]'}>description </span><span>: </span>
-                            <span className={'text-[#2CDA9D]'}>{'\u0022'}A learning lad, capable of writing smart and efficient code.{'\u0022'},</span>
-                            <br/>
-                            &emsp;<span className={'text-[#A30015]'}>skills </span><span>: </span>
-                            <span className={'text-[#F58F29]'}>{'\u005B'}</span><br/>
-                            &emsp;<span className={'text-[#2CDA9D]'}>{'\u0022'}C/C++{'\u0022'}</span>
-                            <span className={'text-[#F58F29]'}>, </span><br/>
-                            &emsp;<span className={'text-[#2CDA9D]'}>{'\u0022'}Python{'\u0022'}</span>
-                            <span className={'text-[#F58F29]'}>, </span><br/>
-                            &emsp;<span className={'text-[#2CDA9D]'}>{'\u0022'}Java{'\u0022'}</span>
-                            <span className={'text-[#F58F29]'}>, </span><br/>
-                            &emsp;<span
-                            className={'text-[#2CDA9D]'}>{'\u0022'}FullStack Web Development{'\u0022'}</span>
-                            <span className={'text-[#F58F29]'}>, </span><br/>
-                            &emsp;<span className={'text-[#2CDA9D]'}>{'\u0022'}Android Development{'\u0022'}</span>
-                            <span className={'text-[#F58F29]'}>, </span><br/>
-                            &emsp;<span className={'text-[#2CDA9D]'}>{'\u0022'}ML & DL{'\u0022'}</span><br/>
-                            <span className={'text-[#F58F29]'}>{'\u005D'}</span>
-                            <br/>
-                            &emsp;<span className={'text-[#A30015]'}>aspirations </span><span>: </span>
-                            <span className={'text-[#F58F29]'}>{'\u005B'}</span><br/>
-                            &emsp;&emsp;<span
-                            className={'text-[#2CDA9D]'}>{'\u0022'}A Career in AI & ML{'\u0022'}</span>
-                            <span className={'text-[#F58F29]'}>, </span><br/>
-                            &emsp;&emsp;<span className={'text-[#2CDA9D]'}>{'\u0022'}Cracking UPSC{'\u0022'}</span><br/>
-                            &emsp;<span className={'text-[#F58F29]'}>{'\u005D'}</span>
-                            <br/>
-                            <span className={'text-[#F58F29]'}>{'\u007D'}</span>
-                        </p>
-
+                        <div className="aboutme__text__desc">
+                            <p className="text-gray-500 dark:text-gray-400">I&apos;m a <span
+                                className={'special'}>Full Stack Developer</span> and a <span
+                                className={'special'}>Competitive Programmer</span> from <span
+                                className={'special'}>India</span>. I&apos;m currently pursuing my B.Tech in <span
+                                className={'special'}>Computer Science and Engineering</span> from <span
+                                className={'special'}>Indian Institute of Information Technology, Ranchi</span>. I
+                                love to <span className={'special'}>code</span> and <span
+                                    className={'special'}>solve problems</span>. I&apos;m a <span
+                                    className={'special'}>quick learner</span> and a <span
+                                    className={'special'}>team player</span>. I&apos;m always ready to <span
+                                    className={'special'}>learn</span> and <span className={'special'}>explore</span>.
+                            </p>
+                        </div>
                     </div>
                     <div className="flex flex-col items-center">
                         <div className="flex flex-row max-w-md gap-5">
