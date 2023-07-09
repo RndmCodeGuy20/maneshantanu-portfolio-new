@@ -1,12 +1,12 @@
 import './App.css';
-import NavBar from "./components/NavBar";
-import MainPage from "./components/MainPage";
-import Footer from "./components/Footer";
-import AboutMe from "./components/AboutMe";
-import Skills from "./components/Skills";
-import {Education} from "./components/Education";
+import NavBar from "./pages/NavBar";
+import MainPage from "./pages/MainPage";
+import Footer from "./pages/Footer";
+import AboutMe from "./pages/AboutMe";
+import Skills from "./pages/Skills";
+import {Education} from "./pages/Education";
 import React from "react";
-import {Projects} from "./components/Projects";
+import {Projects} from "./pages/Projects";
 
 function App() {
 
