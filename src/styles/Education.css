@@ -35,7 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px 0;
+    padding: 1px 0;
     /*background-color: white;*/
 }
 
@@ -55,7 +55,7 @@
 }
 
 .timeline .timeline__list .timeline__obj__container {
-    padding: 20px;
+    padding: 10px;
     /*background-color: #1e1f22;*/
     color: white;
     border-radius: 10px;
@@ -134,7 +134,7 @@
         width: 20px;
         border-radius: 50%;
         background-color: gray;
-        top: 0px;
+        top: 0;
     }
 
     .timeline .timeline__list .timeline__obj__container:nth-child(odd)::before {
@@ -155,5 +155,9 @@
     .timeline .timeline__list .timeline__obj__container:hover::before {
         transition: ease-in-out 300ms;
         background-color: #F43CB9;
+    }
+
+    .timeline__content p {
+        line-height: 20px;
     }
 }
