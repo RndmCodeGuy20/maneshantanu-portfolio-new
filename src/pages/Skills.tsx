@@ -1,22 +1,26 @@
 import '../styles/Skills.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHeart, faPlay} from "@fortawesome/free-solid-svg-icons";
+import React, {useState} from "react";
 
 function Skills() {
     const list: number[] = [1, 2, 3]
+    const [view, setView] = useState(false);
     return (
         <section className="max-w-screen-xl bg-white dark:bg-gray-900 mx-auto p-4 ">
             <div className="flex flex-col align-center">
                 <div className="skills text-center mb-10">
                     <div className="skills__header">Skills</div>
-                    <div className="skills__sub">"I feel the need<span>...</span> The <span>need for speed</span>"</div>
+                    <div className="skills__sub">&quot;I feel the
+                        need<span>...</span> The <span>need for speed</span>&quot;
+                    </div>
                 </div>
                 <div className="skills__desc">
                     <div
                         className="individual__skills grid grid-cols-1 px-10 sm:px-0 sm:grid-cols-3 md:grid-cols-3 gap-10">
                         {list.map((item, index) => (
-                            <div className="skills__lang flex flex-row items-center px-8 gap-4 w-full">
-                                <div className="skills__lang__image">
+                            <div className="skills__lang flex flex-row items-center px-8 gap-4 w-full" key={index}>
+                                <div className="skills__lang__image hidden md:block lg:block">
                                     {/*<img src="../assets/cymphony.png" alt=""/>*/}
                                 </div>
                                 <div className="skills__lang__player flex flex-col flex-grow">
@@ -26,7 +30,7 @@ function Skills() {
                                     <div className="flex justify-between items-center">
                                         <div
                                             className="skills__lang__player__name font-monospace font-semibold text-2xl">
-                                            "C"ymphony
+                                            &quot;C&quot;ymphony
                                         </div>
 
                                         <FontAwesomeIcon icon={faHeart} className={"heart"} size={"lg"}/>
@@ -46,12 +50,13 @@ function Skills() {
                                 </div>
                             </div>))}
                     </div>
-                    <div className="skills__stack grid grid-cols-1 px-10 sm:px-0 sm:grid-cols-3 gap-10 mt-20">
+                    <div className="skills__stack grid grid-cols-1 px-8 sm:px-0 sm:grid-cols-3 gap-10 mt-20">
                         {list.map((item, index) => (
-                            <div className="skills__tech flex flex-col items-center">
+                            <div className="skills__tech flex flex-col items-center" key={index}
+                                 onClick={() => setView(!view)}>
                                 <div className="skills__tech__image my-8 flex items-center justify-center">
                                     <div
-                                        className="skills__stack__image__view flex flex-row items-center justify-center ease-in-out duration-500 hidden gap-2">
+                                        className="skills__stack__image__view flex flex-row items-center justify-center ease-in-out duration-500 md:hidden lg:hidden gap-2">
                                         <svg width="27" height="25" viewBox="0 0 57 55" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path fillRule="evenodd" clipRule="evenodd"
@@ -67,42 +72,28 @@ function Skills() {
                                 <div className="skills__tech__header text-2xl">
                                     Hybrid Frontend Theory
                                 </div>
-                                <div className="border w-10/12 my-2 border-gray hidden"></div>
-                                <div className="skills__tech__desc w-full px-4 flex flex-col ">
-                                    <div className="skills__tech__lang flex flex-row items-center justify-evenly">
-                                        <FontAwesomeIcon icon={faPlay} className={"play__button"}/>
-                                        <div className="skills__tech__lang__name text-xl">HTML</div>
-                                        <div
-                                            className="skills__tech__player flex flex-col w-3/5">
-                                            <div className="skills__tech__player__progress mt-4">
-                                                <div className="skills__tech__player__progress__val">
+                                {/*<div className="border w-10/12 my-2 border-gray hidden"></div>*/}
+                                <div
+                                    className={`skills__tech__desc w-full px-4 flex flex-col ${!view ? 'hidden' : 'block'} ease-in-out`}>
+                                    {list.map((item, index) => (
+                                        <div className="skills__tech__lang flex flex-row items-center justify-evenly"
+                                             key={index}>
+                                            <FontAwesomeIcon icon={faPlay} className={"play__button"}/>
+                                            <div className="skills__tech__lang__name text-xl">HTML</div>
+                                            <div
+                                                className="skills__tech__player flex flex-col w-3/5">
+                                                <div className="skills__tech__player__progress mt-4">
+                                                    <div className="skills__tech__player__progress__val">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="flex justify-between">
+                                                <div className="flex justify-between">
                                     <span
                                         className="text-sm font-medium">0:00</span>
-                                                <span className="text-sm font-medium">3:14</span>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <div className="skills__tech__lang flex flex-row items-center justify-evenly">
-                                        <FontAwesomeIcon icon={faPlay} className={"play__button"}/>
-                                        <div className="skills__tech__lang__name text-xl">HTML</div>
-                                        <div
-                                            className="skills__tech__player flex flex-col w-3/5">
-                                            <div className="skills__tech__player__progress mt-4">
-                                                <div className="skills__tech__player__progress__val">
+                                                    <span className="text-sm font-medium">3:14</span>
                                                 </div>
                                             </div>
-                                            <div className="flex justify-between">
-                                    <span
-                                        className="text-sm font-medium">0:00</span>
-                                                <span className="text-sm font-medium">3:14</span>
-                                            </div>
                                         </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>))}
                     </div>
