@@ -26,17 +26,20 @@ function AboutMe() {
                                 <span className={'text-[#61afef] drop-shadow'}>Developer();</span>
                             </h1>
                         </div>
-                        <p className={"pt-1"}>
-                            I&apos;m a <span className="text-primary special">Full Stack Developer</span> and a <span
-                            className="text-primary">Machine Learning Enthusiast</span> from India. I&apos;m a
-                            passionate learner who&apos;s always willing to learn and work across technologies and
-                            domains. I love to explore new technologies and leverage them to solve real-life problems.
-                            Apart from that I also love to guide and mentor newbies. I&apos;m currently into Web
-                            Development and working on my Data Structures and Algorithms.
+                        <p className={"pt-1 text-justify"}>
+                            A patient, perseverant and passionate developer who loves to code and solve problems.
+                            I am a currently a bachelor&apos;s student at <span
+                            className={'special'}>RCOEM, Nagpur</span> pursuing my degree in <span
+                            className={'special'}>Computer Science and Engineering</span>.
+                            I am a <span className={'special'}>Full Stack Developer</span> with a keen interest in
+                            <span className={'special'}> Data Analytics</span> and <span
+                            className={'special'}> Machine Learning</span>. Over the past few years, I have worked on
+                            various projects and have gained experience in various fields of development; ranging from
+                            <span className={'special'}> Web Development</span> to <span
+                            className={'special'}> Data Analytics</span>, from <span
+                            className={'special'}> Machine Learning</span> to <span
+                            className={'special'}> Android Development</span>.
                         </p>
-                        <Tooltip text={"tool"}>
-                            <p>Show Tooltip</p>
-                        </Tooltip>
                     </div>
                     <div className="flex flex-col items-center">
                         <div className="flex flex-row max-w-md gap-5">

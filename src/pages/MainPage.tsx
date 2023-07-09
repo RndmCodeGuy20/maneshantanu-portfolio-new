@@ -65,12 +65,11 @@ function MainPage() {
                 </div>
             </div>
             <div
-                className={'mt-14 mx-auto justify-center items-center bg-white border-2 border-[#832EF9] rounded-full px-4 py-3 text-[#832EF9] hover:translate-y-2 cursor-pointer duration-300 ease-in-out'}>
+                className={'hidden md:block lg:block mt-14 mx-auto justify-center items-center bg-white border-2 border-[#832EF9] rounded-full px-4 py-3 text-[#832EF9] hover:translate-y-2 cursor-pointer duration-300 ease-in-out'}>
                 <a href="#aboutme">Know Me!</a>
             </div>
         </section>
     );
-
 }
 
 export default MainPage;
