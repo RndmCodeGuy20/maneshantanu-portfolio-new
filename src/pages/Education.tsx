@@ -1,15 +1,17 @@
 import * as React from 'react';
 import '../styles/Education.css';
 
-type Props = {};
+type Props = { type: string };
 export const Education = (props: Props) => {
+    console.log('Education', props.type)
     return (
         <section className="max-w-screen-xl bg-white dark:bg-gray-900 mx-auto pt-16">
             <div className="flex flex-col align-center">
                 <div className="education text-center">
                     <div className="education__header mt-1">Education</div>
-                    <div className="education__sub">"The only true <span>wisdom</span> is in <span>knowing</span> you
-                        know <span>nothing</span>."
+                    <div className="education__sub">&quot;The only true <span>wisdom</span> is
+                        in <span>knowing</span> you
+                        know <span>nothing</span>.&quot;
                     </div>
                 </div>
             </div>
@@ -22,14 +24,18 @@ export const Education = (props: Props) => {
                                 <h1>Delhi Public School, Kamptee Road, Nagpur</h1>
                                 <p className="text-gray">C.B.S.E</p>
                                 <p className="text-gray">Meritorious with 90% marks.</p>
-                                <ul className="obj__list">
-                                    <li className="obj__list__item">
-                                        <p className="text-gray">Participated in various sports and cultural events.</p>
-                                    </li>
-                                    <li className="obj__list__item">
-                                        <p className="text-gray">Participated in various sports and cultural events.</p>
-                                    </li>
-                                </ul>
+                                <div className={"hidden md:block lg:block"}>
+                                    <ul className="obj__list">
+                                        <li className="obj__list__item">
+                                            <p className="text-gray">Participated in various sports and cultural
+                                                events.</p>
+                                        </li>
+                                        <li className="obj__list__item">
+                                            <p className="text-gray">Participated in various sports and cultural
+                                                events.</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </li>
                         <li className="timeline__obj__container">
@@ -46,20 +52,22 @@ export const Education = (props: Props) => {
                                 <h1>Shri Ramdeobaba College of Engineering and Management, Nagpur</h1>
                                 <p className="text-gray">C.B.S.E</p>
                                 <p className="text-gray">Meritorious with 90% marks.</p>
-                                <ul className="obj__list">
-                                    <li className="obj__list__item">
-                                        <p className="text-gray">Facilitated and taught over 750+ students.</p>
-                                    </li>
-                                    <li className="obj__list__item">
-                                        <p className="text-gray">Executive Member @ ISDC, RCOEM Chapter.</p>
-                                    </li>
-                                    <li className="obj__list__item">
-                                        <p className="text-gray">Backend Developer @ GDSC, RCOEM Chapter.</p>
-                                    </li>
-                                    <li className="obj__list__item">
-                                        <p className="text-gray">Member @ Robotics Club, RCOEM.</p>
-                                    </li>
-                                </ul>
+                                <div className={"hidden md:block lg:block"}>
+                                    <ul className="obj__list">
+                                        <li className="obj__list__item">
+                                            <p className="text-gray">Facilitated and taught over 750+ students.</p>
+                                        </li>
+                                        <li className="obj__list__item">
+                                            <p className="text-gray">Executive Member @ ISDC, RCOEM Chapter.</p>
+                                        </li>
+                                        <li className="obj__list__item">
+                                            <p className="text-gray">Backend Developer @ GDSC, RCOEM Chapter.</p>
+                                        </li>
+                                        <li className="obj__list__item">
+                                            <p className="text-gray">Member @ Robotics Club, RCOEM.</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </li>
 
