@@ -13,8 +13,7 @@ function MainPage() {
                 className="flex flex-col-reverse gap-5 sm:flex-row items-center justify-around ">
                 <div className="flex flex-col items-start justify-center">
                     <div className="greeting__wrapper">
-                        {/* eslint-disable-next-line react/no-unescaped-entities */}
-                        <div className="greeting__top text-xl">🧑‍🎤🚀Hi there, I'm👋</div>
+                        <div className="greeting__top text-xl">🧑‍🎤🚀Hi there, I&apos;m👋</div>
                         <div className="greeting__bottom"></div>
                     </div>
 
