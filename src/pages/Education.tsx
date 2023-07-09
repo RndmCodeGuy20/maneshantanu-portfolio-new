@@ -3,7 +3,6 @@ import '../styles/Education.css';
 
 type Props = { type: string };
 export const Education = (props: Props) => {
-    console.log('Education', props.type)
     return (
         <section className="max-w-screen-xl bg-white dark:bg-gray-900 mx-auto pt-16">
             <div className="flex flex-col align-center">
