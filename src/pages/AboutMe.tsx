@@ -4,9 +4,8 @@ import Tooltip from "../components/tooltip";
 
 function AboutMe() {
 
-
     return (
-        <section className="max-w-screen-xl bg-white dark:bg-gray-900 mx-auto p-4 py-16">
+        <section className="max-w-screen-xl bg-white dark:bg-gray-900 mx-auto p-4 py-16" id={"aboutme"}>
             <div className="flex flex-col align-center">
                 <div className="aboutme text-center">
                     <div className="aboutme__header text-5xl md:text-4xl lg:text-4xl">About Me</div>
@@ -26,20 +25,17 @@ function AboutMe() {
                                 <span className={'text-[#61afef] drop-shadow'}>Developer();</span>
                             </h1>
                         </div>
-                        <p className={"pt-1 text-justify"}>
-                            A patient, perseverant and passionate developer who loves to code and solve problems.
-                            I am a currently a bachelor&apos;s student at <span
-                            className={'special'}>RCOEM, Nagpur</span> pursuing my degree in <span
-                            className={'special'}>Computer Science and Engineering</span>.
-                            I am a <span className={'special'}>Full Stack Developer</span> with a keen interest in
-                            <span className={'special'}> Data Analytics</span> and <span
-                            className={'special'}> Machine Learning</span>. Over the past few years, I have worked on
-                            various projects and have gained experience in various fields of development; ranging from
-                            <span className={'special'}> Web Development</span> to <span
-                            className={'special'}> Data Analytics</span>, from <span
-                            className={'special'}> Machine Learning</span> to <span
-                            className={'special'}> Android Development</span>.
-                        </p>
+                        <div className="aboutme__text__desc text-left">
+
+                            <span className={"special"}><Tooltip text={"Hey!"} position={"10"}>
+                                <div className="aboutme__text__desc__header">👋🪨</div>
+                            </Tooltip></span>&nbsp;
+                            I&apos;m Shantanu, a passionate self-taught Full Stack web developer and a
+                            computer science undergraduate from India. My passion for software lies with dreaming up
+                            ideas and making them come true with elegant interfaces. I take great care in the
+                            experience,
+                            architecture, and code quality of the things I build.
+                        </div>
                     </div>
                     <div className="flex flex-col items-center">
                         <div className="flex flex-row max-w-md gap-5">

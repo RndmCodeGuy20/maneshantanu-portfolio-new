@@ -3,6 +3,7 @@ import githubIcon from '../assets/github.svg';
 import linkedinIcon from '../assets/linkedin.svg';
 import instagramIcon from '../assets/instagram.svg';
 import React from "react";
+import {faDownload} from "@fortawesome/free-solid-svg-icons";
 
 // import rightArrowIcon from '../assets/r_arrow.svg';
 
@@ -26,16 +27,16 @@ function MainPage() {
                     <p className="text-lg text-black dark:text-gray-400">A few lines about <br/><br/>myself
                         spanning
                         over at least 3 lines</p>
-                    {/*socials */}
-                    <div className="flex flex-row gap-5 mt-5">
-                        <a href="https://github.com" target="_blank" rel="noreferrer">
+                    <div className="flex flex-row gap-5 md:gap-3 lg:gap-2 mt-5">
+                        <a href="https://linkedin.com/in/maneshantanu20" target="_blank" rel="noreferrer">
                             <div
                                 className="social__container p-1 bg-transparent flex flex-row flex-center items-center justify-center">
-                                <img src={githubIcon} alt="LinkedIn"/>
-                                <span>@RndmCodeGuy20</span>
+                                <img src={linkedinIcon} alt="LinkedIn"/>
+                                <span
+                                    className={"overflow-clip w-max"}>Shantanu Mane</span>
                             </div>
                         </a>
-                        <a href="https://github.com" target="_blank" rel="noreferrer">
+                        <a href="https://github.com/rndmcodeguy20" target="_blank" rel="noreferrer">
                             <div
                                 className="social__container p-1 bg-transparent flex flex-row flex-center items-center justify-center">
                                 <img src={githubIcon} alt="LinkedIn"/>
@@ -45,17 +46,19 @@ function MainPage() {
                         <a href="https://github.com" target="_blank" rel="noreferrer">
                             <div
                                 className="social__container p-1 background:white flex flex-row flex-center items-center justify-center">
-                                <img src={githubIcon} alt="LinkedIn"/>
-                                <span>@RndmCodeGuy20</span>
+                                <img src={instagramIcon} alt="LinkedIn"/>
+                                <span>@shantheman.20</span>
                             </div>
                         </a>
                     </div>
                     <div className="flex flex-row gap-5 mt-5">
-                        <div className="knowme__neu text-lg">
+                        <div className="knowme__neu text-lg cursor-pointer">
                             Know Me!
                         </div>
-                        <div className="resume__neu text-lg">
+                        <div className="resume__neu text-lg cursor-pointer">
                             Resume
+                            <span className={"download__icon"}>
+                            </span>
                         </div>
                     </div>
                 </div>

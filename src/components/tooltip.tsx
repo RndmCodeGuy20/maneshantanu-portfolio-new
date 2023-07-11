@@ -9,13 +9,15 @@ interface TooltipProps {
 
 const Tooltip: FC<TooltipProps> = ({text, position, children}) => {
     return (
-        <div className="group relative inline-block">
-            {children}
-            <div
-                className={`invisible group-hover:visible opacity-0 group-hover:opacity-100 transition bg-blue-400 text-white p-1 rounded-full top-0`}>
+        <span className="group relative inline-block justify-center ease-in-out transition-shadow">
+            <div className=" text-black">
                 {text}
             </div>
-        </div>
+            <div
+                className={`absolute bottom-${position} w-24 scale-0 rounded p-2 text-xs text-black lg:group-hover:scale-125 md:group-hover:scale-125 transition-colors ease-in-out`}>
+                {children}
+            </div>
+        </span>
     );
 }
 
