@@ -22,11 +22,14 @@ function MainPage() {
                         <span className="special">Shantanu</span> Mane</h1>
                     {/*<p className="text-2xl mx-auto">a.k.a</p>*/}
                     {/*<div className="rndmcodeguy__neu name mx-auto">RndmCodeGuy</div>*/}
-                    <p className="text-3xl text-center text-gray dark:text-gray-400">Thinker | Programmer | Doer</p>
+                    <p className="text-2xl md:text-2xl lg:text-3xl text-center text-gray dark:text-gray-400">Thinker |
+                        Programmer |
+                        Doer
+                    </p>
                     <p className="text-lg text-black dark:text-gray-400">A few lines about <br/><br/>myself
                         spanning
                         over at least 3 lines</p>
-                    <div className="flex flex-row gap-5 md:gap-3 lg:gap-2 mt-5">
+                    <div className="flex flex-row gap-5 md:gap-3 lg:gap-2 mt-2">
                         <a href="https://linkedin.com/in/maneshantanu20" target="_blank" rel="noreferrer">
                             <div
                                 className="social__container p-1 bg-transparent flex flex-row flex-center items-center justify-center">

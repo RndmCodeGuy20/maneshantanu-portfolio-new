@@ -7,9 +7,9 @@ export const Education = () => {
             <div className="flex flex-col align-center">
                 <div className="education text-center">
                     <div className="education__header mt-1">Education</div>
-                    <div className="education__sub">&quot;The only true <span>wisdom</span> is
-                        in <span>knowing</span> you
-                        know <span>nothing</span>.&quot;
+                    <div className="education__sub">&quot;The only true <span className={"special"}>wisdom</span> is
+                        in <span className={"special"}>knowing</span> you
+                        know <span className={"special"}>nothing</span>.&quot;
                     </div>
                 </div>
             </div>
@@ -48,8 +48,8 @@ export const Education = () => {
                             <div className="timeline__content">
                                 <h3 className="date text-2xl">2020 - 2024</h3>
                                 <h1>Shri Ramdeobaba College of Engineering and Management, Nagpur</h1>
-                                <p className="text-gray">C.B.S.E</p>
-                                <p className="text-gray">Meritorious with 90% marks.</p>
+                                <p className="text-gray">C.S.E. - Artificial Intelligence and Machine Learning</p>
+                                <p className="text-gray">Current GPA : <span className={"font-bolder"}>9.06</span></p>
                                 <div className={"hidden md:block lg:block"}>
                                     <ul className="obj__list">
                                         <li className="obj__list__item">
@@ -68,7 +68,6 @@ export const Education = () => {
                                 </div>
                             </div>
                         </li>
-
                     </ul>
                 </div>
             </div>

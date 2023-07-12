@@ -7,7 +7,7 @@ function Skills() {
     const list: number[] = [1, 2, 3]
     const [view, setView] = useState([false, false, false]);
     return (
-        <section className="max-w-screen-xl bg-white dark:bg-gray-900 mx-auto p-4 " id={"skills"}>
+        <section className="max-w-screen-xl bg-white dark:bg-gray-900 mx-auto p-4" id={"skills"}>
             <div className="flex flex-col align-center">
                 <div className="skills text-center mb-10">
                     <div className="skills__header">Skills</div>
