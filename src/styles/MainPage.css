@@ -35,6 +35,7 @@
     background: #832EF9;
     bottom: -5px;
     left: 0;
+    border: 2px solid #832EF9;
 
     border-radius: 200px;
 
@@ -77,9 +78,20 @@
     background: #832EF9;
     color: white;
     padding: 10px 30px;
-    /*border: 0px solid #000000;*/
+    border: 2px solid #832EF9;
     border-radius: 10px;
     box-shadow: 5px 5px #000;
+    transition: 0.5s;
+}
+
+.knowme__neu:hover {
+    background: white;
+    color: #832EF9;
+    padding: 10px 30px;
+    border: 2px solid #832EF9;
+    border-radius: 10px;
+    box-shadow: 0px 0px #000;
+    transition: 0.5s;
 }
 
 .resume__neu {
@@ -89,6 +101,16 @@
     border: 2px solid #000000;
     border-radius: 10px;
     box-shadow: 5px 5px #000;
+    transition: 0.5s;
+}
+
+/* on hover add a download icon to the right of the inner text*/
+.resume__neu:hover {
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0px 0px #000;
+    transition: 0.5s;
 }
 
 .social__container {
@@ -96,9 +118,8 @@
     background: transparent;
     height: 40px;
     width: 40px;
-    border-radius: 5px;
     transition: 1s;
-    color: #F43CB9;
+    text-decoration: #F43CB9;
 }
 
 .social__container span {
@@ -109,16 +130,15 @@
 }
 
 .social__container:hover {
-    width: 170px;
     border-radius: 5px;
-    border: 2px solid black;
-    box-shadow: 2px 2px #000;
+    background: #E4D7FF;
+    width: 170px;
     transition: ease-in-out 0.5s;
 }
 
 .social__container:hover span {
     padding: 2px;
-    width: 200px;
+    width: 150px;
 }
 
 
