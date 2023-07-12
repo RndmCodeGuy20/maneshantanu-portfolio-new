@@ -17,7 +17,7 @@ function AboutMe() {
                     className="aboutme__desc flex gap-10 flex-col lg:flex-row md:flex-col sm:flex-row align-center justify-items-center mx-auto py-8">
                     <div className="aboutme__text text-center max-w-xs lg:max-w-md md:max-w-md bg-purple-50">
                         <div
-                            className="aboutme__image mx-auto px-2 text-white max-w-sm lg:max-w-md md:max-w-md w-fit">
+                            className="aboutme__image mx-auto px-1 text-white max-w-sm lg:max-w-md md:max-w-md w-fit">
                             <h1 className="">
                                 <span className={'text-[#e5c07b] drop-shadow'}>const </span>
                                 <span className={'text-[#abb2bf] drop-shadow'}>shantanu = </span>
@@ -25,7 +25,7 @@ function AboutMe() {
                                 <span className={'text-[#61afef] drop-shadow'}>Developer();</span>
                             </h1>
                         </div>
-                        <div className="aboutme__text__desc text-left">
+                        <div className="aboutme__text__desc text-justify mt-5">
 
                             <span className={"special w-fit"}>
                                 <Tooltip text={"Hey!"} position={"10"}>
