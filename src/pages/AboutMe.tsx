@@ -80,7 +80,6 @@ function AboutMe() {
                         <div className="flex flex-row max-w-md gap-5">
                             <div className="">
                                 <div className="list__num ">01</div>
-
                             </div>
                             <div className="flex flex-col">
                                 <div className="list__details_header">Number of Projects Completed :</div>

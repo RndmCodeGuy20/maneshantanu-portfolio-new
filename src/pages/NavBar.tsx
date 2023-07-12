@@ -37,21 +37,21 @@ function NavBar() {
                      id="navbar-cta">
                     <ul className="flex flex-col text-xl font-medium p-4 md:p-0 mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
-                            <a href="#"
+                            <a href="/"
                                className="block py-2 pl-3 pr-4 text-navLink rounded md:bg-transparent md:p-0 md:dark:text-navLink dark:hover:text-primary navlink__text"
                                aria-current="page">Home</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="#aboutme"
                                className="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-navLink dark:hover:bg-gray-700 dark:hover:text-primary md:dark:hover:bg-transparent navlink__text">About</a>
                         </li>
                         <li>
-                            <a href="#"
-                               className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-navLink dark:hover:bg-gray-700 dark:hover:text-primary md:dark:hover:bg-transparent dark:border-gray-700 navlink__text">Services</a>
+                            <a href="#skills"
+                               className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-navLink dark:hover:bg-gray-700 dark:hover:text-primary md:dark:hover:bg-transparent dark:border-gray-700 navlink__text">Skills</a>
                         </li>
                         <li>
                             <a href="#"
-                               className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-navLink dark:hover:bg-gray-700 dark:hover:text-primary md:dark:hover:bg-transparent navlink__text">Contact</a>
+                               className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-navLink dark:hover:bg-gray-700 dark:hover:text-primary md:dark:hover:bg-transparent navlink__text">Projects</a>
                         </li>
                     </ul>
                 </div>
@@ -70,7 +70,7 @@ function NavBar() {
                         </svg>
                     </button>
                 </div>
-                <div className="px-6 py-4 border rounded-t-lg bg-white">
+                <div className="px-6 py-4 border border-b-0 rounded-t-lg bg-white">
                     <h3 className="text-xl font-semibold text-black">
                         Wander around traveller! 🧳🌏
                     </h3>
@@ -79,12 +79,13 @@ function NavBar() {
                     <ul className="my-1 space-y-3 text-2xl bg-white">
                         <li>
                             <a href="#aboutme"
-                               className="block rounded-lg bg-light p-3">About
+                               className="rounded-lg bg-light p-3 inline-flex w-full justify-around">👨‍🎤
+                                About
                             </a>
                         </li>
                         <li>
-                            <a href="#aboutme"
-                               className="block rounded-lg bg-light p-3">Skills
+                            <a href="#skills"
+                               className="rounded-lg bg-light p-3 inline-flex w-full justify-around">⚙️ Skills
                             </a>
                         </li>
                     </ul>

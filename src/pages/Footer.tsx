@@ -1,4 +1,5 @@
 // import '../styles/Footer.css';
+import React from 'react';
 import githubIcon from "../assets/github.svg";
 import linkedinIcon from "../assets/linkedin.svg";
 import instagramIcon from "../assets/instagram.svg";
