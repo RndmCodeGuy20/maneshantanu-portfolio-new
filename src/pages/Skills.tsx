@@ -5,21 +5,22 @@ import React, {useState} from "react";
 
 function Skills() {
     const list: number[] = [1, 2, 3]
-    const [view, setView] = useState(false);
+    const [view, setView] = useState([false, false, false]);
     return (
-        <section className="max-w-screen-xl bg-white dark:bg-gray-900 mx-auto p-4 ">
+        <section className="max-w-screen-xl bg-white dark:bg-gray-900 mx-auto p-4 " id={"skills"}>
             <div className="flex flex-col align-center">
                 <div className="skills text-center mb-10">
                     <div className="skills__header">Skills</div>
-                    <div className="skills__sub">&quot;I feel the
-                        need<span>...</span> The <span>need for speed</span>&quot;
+                    <div className="skills__sub text-xl md:text-2xl lg:text-2xl">&quot;I feel the
+                        need<span>...</span> The <span className={"special"}>need for speed</span>&quot;
                     </div>
                 </div>
                 <div className="skills__desc">
                     <div
                         className="individual__skills grid grid-cols-1 px-10 sm:px-0 sm:grid-cols-3 md:grid-cols-3 gap-10">
                         {list.map((item, index) => (
-                            <div className="skills__lang flex flex-row items-center px-8 gap-4 w-full" key={index}>
+                            <div className="skills__lang flex flex-row items-center px-4 lg:px-8 md:px-8 gap-4 w-full"
+                                 key={index}>
                                 <div className="skills__lang__image hidden md:block lg:block">
                                     {/*<img src="../assets/cymphony.png" alt=""/>*/}
                                 </div>
@@ -50,11 +51,16 @@ function Skills() {
                                 </div>
                             </div>))}
                     </div>
-                    <div className="skills__stack grid grid-cols-1 px-8 sm:px-0 sm:grid-cols-3 gap-10 mt-20">
+                    <div
+                        className="skills__stack flex flex-col px-8 md:grid lg:flex md:flex-row lg:grid-cols-3 gap-10 mt-20 focus:hidden h-max">
                         {list.map((item, index) => (
-                            <div className="skills__tech flex flex-col items-center" key={index}
-                                 onClick={() => setView(!view)}>
-                                <div className="skills__tech__image my-8 flex items-center justify-center">
+                            <div className="skills__tech flex flex-col items-center h-max ease-in-out duration-300"
+                                 key={index}
+                            >
+                                <div className="skills__tech__image my-8 flex items-center justify-center"
+                                     onClick={() => setView(
+                                         view.map((item, i) => i === index ? !item : item)
+                                     )}>
                                     <div
                                         className="skills__stack__image__view flex flex-row items-center justify-center ease-in-out duration-500 md:hidden lg:hidden gap-2">
                                         <svg width="27" height="25" viewBox="0 0 57 55" fill="none"
@@ -74,10 +80,11 @@ function Skills() {
                                 </div>
                                 {/*<div className="border w-10/12 my-2 border-gray hidden"></div>*/}
                                 <div
-                                    className={`skills__tech__desc w-full px-4 flex flex-col ${!view ? 'hidden' : 'block'} ease-in-out`}>
+                                    className={`skills__tech__desc w-full px-4 flex flex-col ${!view[index] ? 'hidden' : 'block'} `}>
                                     {list.map((item, index) => (
-                                        <div className="skills__tech__lang flex flex-row items-center justify-evenly"
-                                             key={index}>
+                                        <div
+                                            className="skills__tech__lang flex flex-row items-center justify-evenly transition duration-500"
+                                            key={index}>
                                             <FontAwesomeIcon icon={faPlay} className={"play__button"}/>
                                             <div className="skills__tech__lang__name text-xl">HTML</div>
                                             <div

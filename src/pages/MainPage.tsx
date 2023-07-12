@@ -9,7 +9,7 @@ import {faDownload} from "@fortawesome/free-solid-svg-icons";
 
 function MainPage() {
     return (
-        <section className="max-w-screen-xl bg-white dark:bg-gray-900 mx-auto p-4 pt-16 h-full flex flex-col">
+        <section className="max-w-screen-xl bg-white dark:bg-gray-900 mx-auto p-6 lg:pt-16 h-full flex flex-col">
             <div
                 className="flex flex-col-reverse gap-5 sm:flex-row items-center justify-around ">
                 <div className="flex flex-col items-start justify-center">

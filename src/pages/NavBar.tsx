@@ -70,7 +70,7 @@ function NavBar() {
                         </svg>
                     </button>
                 </div>
-                <div className="px-6 py-4 border rounded-t-lg bg-white">
+                <div className="px-6 py-4 border border-b-0 rounded-t-lg bg-white">
                     <h3 className="text-xl font-semibold text-black">
                         Wander around traveller! 🧳🌏
                     </h3>
@@ -79,12 +79,13 @@ function NavBar() {
                     <ul className="my-1 space-y-3 text-2xl bg-white">
                         <li>
                             <a href="#aboutme"
-                               className="block rounded-lg bg-light p-3">About
+                               className="rounded-lg bg-light p-3 inline-flex w-full justify-around">👨‍🎤
+                                About
                             </a>
                         </li>
                         <li>
-                            <a href="#aboutme"
-                               className="block rounded-lg bg-light p-3">Skills
+                            <a href="#skills"
+                               className="rounded-lg bg-light p-3 inline-flex w-full justify-around">⚙️ Skills
                             </a>
                         </li>
                     </ul>
