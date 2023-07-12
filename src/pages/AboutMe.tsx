@@ -27,9 +27,12 @@ function AboutMe() {
                         </div>
                         <div className="aboutme__text__desc text-left">
 
-                            <span className={"special"}><Tooltip text={"Hey!"} position={"10"}>
-                                <div className="aboutme__text__desc__header">👋🪨</div>
-                            </Tooltip></span>&nbsp;
+                            <span className={"special w-fit"}>
+                                <Tooltip text={"Hey!"} position={"10"}>
+                                    <div className="aboutme__text__desc__header">👋🪨</div>
+                                </Tooltip>
+                            </span>
+                            &nbsp;
                             I&apos;m Shantanu, a passionate self-taught Full Stack web developer and a
                             computer science undergraduate from India. My passion for software lies with dreaming up
                             ideas and making them come true with elegant interfaces. I take great care in the

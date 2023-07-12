@@ -101,6 +101,7 @@
     border: 2px solid #000000;
     border-radius: 10px;
     box-shadow: 5px 5px #000;
+    transition: 0.5s;
 }
 
 /* on hover add a download icon to the right of the inner text*/
