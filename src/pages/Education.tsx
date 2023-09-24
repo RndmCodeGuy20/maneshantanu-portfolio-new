@@ -53,16 +53,16 @@ export const Education = () => {
                                 <div className={"hidden md:block lg:block"}>
                                     <ul className="obj__list">
                                         <li className="obj__list__item">
+                                            <p className="text-gray">WebDev Lead @ GDSC, RCOEM Chapter.</p>
+                                        </li>
+                                        <li className="obj__list__item">
+                                            <p className="text-gray">Technical Head @ Robotics Club, RCOEM.</p>
+                                        </li>
+                                        <li className="obj__list__item">
                                             <p className="text-gray">Facilitated and taught over 750+ students.</p>
                                         </li>
                                         <li className="obj__list__item">
                                             <p className="text-gray">Executive Member @ ISDC, RCOEM Chapter.</p>
-                                        </li>
-                                        <li className="obj__list__item">
-                                            <p className="text-gray">Backend Developer @ GDSC, RCOEM Chapter.</p>
-                                        </li>
-                                        <li className="obj__list__item">
-                                            <p className="text-gray">Member @ Robotics Club, RCOEM.</p>
                                         </li>
                                     </ul>
                                 </div>
