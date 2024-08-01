@@ -5,8 +5,8 @@ import Footer from "./pages/Footer";
 import AboutMe from "./pages/AboutMe";
 import Skills from "./pages/Skills";
 import {Education} from "./pages/Education";
-import React from "react";
 import {Projects} from "./pages/Projects";
+import React from "react";
 import UnderConstruction from "./components/under_construction";
 
 function App() {

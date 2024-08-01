@@ -3,9 +3,18 @@ import '../styles/Projects.css'
 import {projects} from "../data/projects";
 import mlLogo from "../assets/ml.svg";
 
+interface IProject{
+    name: string,
+    image: string,
+    github: string,
+    link: string,
+    tech: string[]
+}
+
 export const Projects = () => {
+    type Category = 'frontend' | 'backend' | 'ml';
     // const list = [1, 2, 3]
-    const [category, setCategory] = useState('frontend');
+    const [category, setCategory] = useState<Category>('frontend');
 
     return (
         <section className="max-w-screen-xl bg-white dark:bg-gray-900 mx-auto mb-10 sm:mb-5" id={'projects'}>
@@ -66,7 +75,7 @@ export const Projects = () => {
                     {/*</div>*/}
                     <div
                         className={'featured__projects__list grid grid-rows-1 md:grid-cols-2 lg:grid-cols-2 gap-5 mt-5'}>
-                        {projects[category].map(( project: object, index: number ) => (
+                        {projects[category].map(( project: IProject, index: number ) => (
                             <div key={index}
                                  className="project__container rounded-[10px] bg-white p-2 sm:p-6 border-highlight border-2">
                                 <div className="group relative block h-40 sm:h-80 lg:h-64">

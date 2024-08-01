@@ -1,4 +1,4 @@
-type Project = {
+interface IProjects {
     frontend: {
         name: string,
         description: string,
@@ -25,7 +25,7 @@ type Project = {
     }[]
 }
 
-export const projects: Project = {
+export const projects: IProjects = {
     'frontend': [
         {
             'name': 'Airbnb Clone',
