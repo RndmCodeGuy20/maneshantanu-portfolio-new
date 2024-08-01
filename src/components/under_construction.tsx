@@ -4,8 +4,13 @@ import '../styles/UnderConstruction.css';
 function UnderConstruction() {
     return (
         <div className={'hazard_container'}>
-            <h1>Under Construction</h1>
-            <h2>This page is under construction (somethings cooking)...</h2>
+            <h1 style={{
+		transform: 'rotate(-10deg)',
+		borderRadius: '15px'
+	    }}>CAUTION</h1>
+            <h2 style={{
+		marginTop: '3.5rem',
+	    }}>This project is under construction,<br/> kindly watch your heads for debris...</h2>
 
             <div className="hazard_banner banner1">
             </div>
