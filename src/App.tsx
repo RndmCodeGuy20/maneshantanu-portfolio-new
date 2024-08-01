@@ -7,6 +7,7 @@ import Skills from "./pages/Skills";
 import {Education} from "./pages/Education";
 import React from "react";
 import {Projects} from "./pages/Projects";
+import UnderConstruction from "./components/under_construction";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Education/>
             <Projects/>
             <Footer/>
+            <UnderConstruction/>
         </>
     )
 }
