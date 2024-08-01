@@ -3,7 +3,6 @@ import githubIcon from '../assets/github.svg';
 import linkedinIcon from '../assets/linkedin.svg';
 import instagramIcon from '../assets/instagram.svg';
 import React from "react";
-import {faDownload} from "@fortawesome/free-solid-svg-icons";
 
 // import rightArrowIcon from '../assets/r_arrow.svg';
 
@@ -18,7 +17,7 @@ function MainPage() {
                         <div className="greeting__bottom"></div>
                     </div>
 
-                    <h1 className="font-serif font-bolder text-center text-black dark:text-black name">
+                    <h1 className="font-serif font-bolder text-center text-black dark:text-black name mt-5">
                         <span className="special">Shantanu</span> Mane</h1>
                     {/*<p className="text-2xl mx-auto">a.k.a</p>*/}
                     {/*<div className="rndmcodeguy__neu name mx-auto">RndmCodeGuy</div>*/}
@@ -69,10 +68,12 @@ function MainPage() {
                     </div>
                 </div>
             </div>
-            <div
-                className={'hidden md:block lg:block mt-14 mx-auto justify-center items-center bg-white border-2 border-[#832EF9] rounded-full px-4 py-3 text-[#832EF9] hover:translate-y-2 cursor-pointer duration-300 ease-in-out'}>
-                <a href="#aboutme">Know Me!</a>
-            </div>
+            <a href="#aboutme" className={'w-max mx-auto'}>
+                <div
+                    className={'hidden md:block lg:block mt-14 mx-auto justify-center items-center bg-white border-2 border-[#832EF9] rounded-full px-4 py-3 text-[#832EF9] hover:translate-y-2 cursor-pointer duration-300 ease-in-out'}>
+                    Know Me!
+                </div>
+            </a>
         </section>
     );
 }

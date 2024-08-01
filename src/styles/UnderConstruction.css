@@ -1,0 +1,87 @@
+.hazard_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: 'Generator', sans-serif;
+}
+
+.hazard_container h1{
+    padding: 0 1rem;
+    font-size: 8rem;
+    line-height: 1;
+    background-color: #000000;
+    color: #ffee32;
+    text-align: center;
+    z-index: 10;
+}
+
+.hazard_container h2{
+    font-size: 2rem;
+    color: #000000;
+    text-align: center;
+    z-index: 10;
+}
+
+.hazard_banner{
+    position: fixed;
+    width: 50px;
+    background: repeating-linear-gradient(45deg, #000000, #000000 20px, #ffee32 20px, #ffee32 40px);
+    z-index: 1;
+}
+
+.banner1{
+    top: -35%;
+    left:5%;
+    height: 200vh;
+    transform: rotate(45deg);
+}
+
+.banner2{
+    top: -35%;
+    right:5%;
+    height: 200vh;
+    transform: rotate(-25deg);
+}
+
+.banner3{
+    bottom: -35%;
+    left:5%;
+    height: 200vh;
+    transform: rotate(-25deg);
+}
+
+.banner4{
+    bottom: -110%;
+    height: 120vw;
+    transform: rotate(95deg);
+}
+
+@media screen and (max-width: 768px){
+    .hazard_container h1{
+        font-size: 6rem;
+    }
+    .hazard_container h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .hazard_container h1{
+        font-size: 4rem;
+    }
+    .hazard_container h2{
+        font-size: 1.2rem;
+    }
+}
+
+
+::selection{
+    background-color: #000000;
+    color: #ffee32;
+}
